@@ -27,7 +27,7 @@ class Recipe extends React.Component {
         } 
         throw new Error("Network response was not okay!");
       })
-      .then(response => this.setState({ recipe.response }))
+      .then(response => this.setState({ recipe: response }))
       .catch(() => this.props.history.push("/recipes"));
     }
 
@@ -100,7 +100,7 @@ class Recipe extends React.Component {
 
     
     
-}
+
   
 
 export default Recipe;
